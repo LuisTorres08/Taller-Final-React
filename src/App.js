@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react'
+import { PokemonGrid } from './components/PokemonGrid';
+import { AddSearch } from './components/AddSearch';
 
-function App() {
+const App = ({categorias = []}) => {
+  const [categoriasBusqueda, setCategoriasBusqueda] = useState(categorias);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <h2>PokeAPi</h2>
+        <AddSearch setCategoriasBusqueda={setCategoriasBusqueda}/>
+        <hr></hr>
+
+        <ol>
+        {
+            categoriasBusqueda.map(categoriaBusqueda => (
+                <PokemonGrid
+                    key = {categoriaBusqueda} 
+                    valorBusqueda={categoriaBusqueda}
+                />
+            ))
+        }
+    </ol>
     </div>
   );
 }

@@ -42,7 +42,7 @@ export const PokemonGrid = ({valorBusqueda}) => {
         <>
             {loading && <p className='animate__animated animate__flash'>Loading...</p>}
 
-           <div className='card-grid grid' id='grid'>
+           <div className='card-grid animate__animated animate__fadeIn grid' id='grid'>
 
                     {
 
@@ -53,7 +53,7 @@ export const PokemonGrid = ({valorBusqueda}) => {
                     }
 
                     <hr></hr>
-                    
+
                     <div>
                     <button className='btn btn-danger btn-sm float-end mx-2' onClick={()=> eliminar(valorBusqueda.id)}>
                         Eliminar

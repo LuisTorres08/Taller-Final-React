@@ -27,7 +27,7 @@ export const AddSearch =({setCategoriasBusqueda})=>{
                     value = {valorBusqueda}
                     onChange={cambiarValorBusqueda}
                 />
-                <button type="submit">Insertar</button>
+                {/* <button type="submit">Insertar</button> */}
             </form>
         </>
     );

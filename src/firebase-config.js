@@ -14,13 +14,22 @@ import 'firebase/firestore'
 //   appId: "1:260876359999:web:ce5692fdc4d4ae0a73db8a"
 // };
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBTxIezqSeEAWtBepI1knq221pJiciitC4",
+//   authDomain: "pokeapi-eec01.firebaseapp.com",
+//   projectId: "pokeapi-eec01",
+//   storageBucket: "pokeapi-eec01.appspot.com",
+//   messagingSenderId: "272865240534",
+//   appId: "1:272865240534:web:f5234dd4865b1d1130f077"
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBTxIezqSeEAWtBepI1knq221pJiciitC4",
-  authDomain: "pokeapi-eec01.firebaseapp.com",
-  projectId: "pokeapi-eec01",
-  storageBucket: "pokeapi-eec01.appspot.com",
-  messagingSenderId: "272865240534",
-  appId: "1:272865240534:web:f5234dd4865b1d1130f077"
+  apiKey: "AIzaSyCCYKBHJqE38fY7ATshZedCiW9aSeW-O5g",
+  authDomain: "pokeapi-efe33.firebaseapp.com",
+  projectId: "pokeapi-efe33",
+  storageBucket: "pokeapi-efe33.appspot.com",
+  messagingSenderId: "976915774850",
+  appId: "1:976915774850:web:88352384b9ac498cdc239b"
 };
 
 // Initialize Firebase
